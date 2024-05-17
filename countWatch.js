@@ -2,13 +2,13 @@ function display(value) {
     document.querySelector("#result").value += value;
     return value;
 }
-display(0);
-function count(num) {
+display();
+function count() {
+    let value = 0;
     const press = document.querySelector("#count");
     press.addEventListener("click", function () {
-        for (let value = 0; value <= 5; value++) {
+        value++;
             display(value);
-        }
     });
 }
 count();
