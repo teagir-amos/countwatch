@@ -2,7 +2,7 @@ function display(value) {
     document.querySelector("#result").value += value;
     return value;
 }
-display();
+display(0);
 function count() {
     let value = 0;
     const press = document.querySelector("#count");
